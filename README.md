@@ -28,6 +28,7 @@ terraform -v
 - ```terraform destroy``` #destroy/cleanup deployment
 - ```terraform plan``` #output the deployment plan to plan.out
 - ```terraform apply -target=aws_instance.my_ec2``` #only apply/deploy changes to the targeted resource
+-```terraform <apply/plan> -var-file="secrets.tfvars"``` #specify the tfvars file that should be used
 - ```terraform <apply/destroy> --auto-approve``` #/destroy changes without being prompted to enter “yes”
 - ```terraform refresh``` #reconcile the state in Terraform state file with real-world resources
 - ```terraform providers``` #get information about providers used in current configuration
